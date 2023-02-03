@@ -16,18 +16,26 @@
    <img src="http://via.placeholder.com/100x100" alt="logo">
    <h1>Alex Sweeney</h1>
    <nav>
-    <ul>
-    <li><h2><a href="index.html">Portfolio</a></h2></li>
-    <li><h2><a href="about.html">About Me</a></h2></li> 
-    <li><h2><a href="contact.html">Contact</a></h2></li> 
-    </ul>
+    <nav>
+      <ul role="menubar">
+         <li role="presentation">
+            <h2><a href="index.html" role="menuitem">Home</a></h2>
+         </li>
+         <li role="presentation">
+            <h2><a href="about.html" role="menuitem">About Me</a></h2>
+         </li>
+        <li role="presentation">
+            <h2><a href="contact.html" role="menuitem">Contact</a></h2>
+         </li>
+      </ul>
+   </nav>
    </nav> 
 </header>
   
 
 <main>
   <div> 
-  <img src="img/headshot.jpg" alt="Headshot" height="300" width="300">
+  <img src="img/alex-sweeney-headshot.jpg" alt="Headshot, a photo of me" height="300" width="300">
     <div>
           <p>I am currently a Trader Solutions Specialist at TD Ameritrade/Schwab.  Clients who have an account of $3,000 or more with us get free 45 minute 1-on-1 walkthroughs of Thinkorswim, our advanced trading software.</p>
           <p>My role consists of me performing between 6-8 of these meetings per day, where I spend the first 5 or so minutes getting to know them as a trader or investor, so that I can tailor their demo to fit their needs.  We spend the rest of the time going through various features/tools on the platform, and how they can use them best.</p> 
@@ -35,10 +43,43 @@
       
     </div>       
   </div> 
+
+  <table>
+    <thead>
+     <tr>
+      <td>Coding Skills</td>
+      <td>Years of Experience</td>
+      <td>Level of Expertise</td>
+     </tr>
+    </thead>
+   <tbody>
+     <tr>
+      <td>HTML</td>
+      <td>< 1</td>
+      <td>Beginner </td>
+     </tr>
+     <tr>
+      <td>CSS</td>
+      <td>< 1</td>
+      <td>Beginner</td>
+     </tr>
+     <tr>
+      <td>ThinkScript</td>
+      <td>5</td>
+      <td>Expert</td>
+     </tr>
+     <tr>
+      <td>PineScript</td>
+      <td>2</td>
+      <td>Intermediate</td>
+     </tr>
+   </tbody> 
+  </table>
+
        
   <div>
-    <h3><p>Here is a copy of my resume, with more info on my work and education history:</p></h3>
-    <a href="https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A5ad673ac-f2f1-4efa-82d0-6f27101b8e09&viewer%21megaVerb=group-discover" target="_blank"><img src="img/adobe_acrobat_logo.svg"></a>
+    <h2><p>Here is a copy of my resume, with more info on my work and education history:</p></h2>
+    <a href="https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A5ad673ac-f2f1-4efa-82d0-6f27101b8e09&viewer%21megaVerb=group-discover" target="_blank"><img src="img/adobe_acrobat_logo.svg" alt="Adobe Logo to view Resume"></a>
   </div>     
 </main>
 
@@ -49,6 +90,8 @@
   <a href="https://www.linkedin.com/in/alex-sweeney-7b030b142" target="_blank"><img src="img/linkedin_icon.svg" alt="Linkedin"></a>
 </footer>
 
+
+<script src="js/tota11y.min.js"></script>
 </body>
 
 </html>
