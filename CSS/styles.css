@@ -1,0 +1,258 @@
+:root {
+  --font-weight__h: 700;
+  --text-color: #201b41;
+  --header-color: #00ffff;
+  --screen-size-scale: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  --screen-size__multiplier: 1;
+  font-size: calc(16px * var(--screen-size-scale));
+  color: var(--text-color);
+  line-height: 1.25;
+}
+
+/*
+margin: top right bottom left;
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+body h1 {
+  font-size: calc(25px * var(--screen-size-scale));
+  font-weight: var(--font-weight__h);
+  color: var(--text-color);
+}
+body h2 {
+  font-size: calc(20px * var(--screen-size-scale));
+  font-weight: var(--font-weight__h);
+  color: var(--text-color);
+}
+h3 {
+  font-size: calc(18px * var(--screen-size-scale));
+  font-weight: var(--font-weight__h);
+  color: var(--text-color);
+}
+
+h4 {
+  font-size: calc(16px * var(--screen-size-scale));
+  font-weight: var(--font-weight__h);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--text-color);
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  background-color: var(--header-color);
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.page-header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header__logo {
+  width: calc(100px * var(--screen-size-scale));
+  margin: 15px 10px 0 10px;
+  border-radius: 35%;
+}
+
+.page-header__right {
+  margin: -10px 0 0 -10px;
+}
+.navigation-list li {
+  display: inline-block;
+  margin: 3px;
+}
+
+.navigation-list__item a:before,
+.navigation-list__item a:after {
+  position: relative;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.navigation-list__item a:before {
+  content: "( ";
+  left: 0px;
+  transform: translateX(10px) !important;
+}
+
+.navigation-list__item a:after {
+  content: " )";
+  right: 0px;
+  transform: translateX(-10px) !important;
+}
+
+.navigation-list__item a:hover:before,
+.navigation-list__item a:hover:after {
+  opacity: 1;
+  transform: translateX(0px) !important;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--header-color);
+}
+/* end of universal CSS */
+
+/* Home  */
+
+/* About Me */
+
+.profile {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.profile_portrait {
+  width: calc(300px * var(--screen-size-scale));
+  max-width: 500px;
+  height: auto;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.coding-skills__table {
+  clear: both;
+  display: none;
+}
+
+.button,
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--header-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 3px solid var(--text-color);
+  transition-delay: 0.2s;
+  transition-property: background-color;
+}
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: rgb(0, 255, 255, 0.2);
+}
+
+/* Contact  */
+
+.button__secondary {
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*  Thinkorswim  */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  grid-gap: 5px;
+}
+
+.grid-item {
+  background-color: lightgray;
+  margin: 5px;
+  padding: 5px;
+  flex-flow: wrap;
+}
+
+@media (min-width: 750px) {
+  :root {
+    --screen-size-scale: 1.1;
+  }
+  body {
+    line-height: 1.6;
+  }
+  main {
+    margin: 50px;
+  }
+
+  .page-header {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .page-header__logo {
+    margin: 12px;
+  }
+  .page-header__right,
+  .page-header__left {
+    margin: 0 3%;
+  }
+}

@@ -1,100 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alex Sweeney - About</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./Img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <title>Alex Sweeney - Portfolio</title>
-    <link rel="icon" type="image/png" href="./Img/favicon-32x32.png" sizes="32x32" />
-</head>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    /> -->
 
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <header class="page-header">
+      <div class="page-header__left">
+        <img src="img/logo_v1.png" alt="logo" class="page-header__logo" />
+        <h1>Alex Sweeney</h1>
+      </div>
+      <div class="page-header__right">
+        <ul role="menubar" class="navigation-list">
+          <li
+            role="presentation"
+            class="navigation-list__item navigation-list__item--active"
+          >
+            <h2>
+              <a href="index.html" role="menuitem">Home</a>
+            </h2>
+          </li>
+          <li
+            role="presentation"
+            class="navigation-list__item navigation-list__item--active"
+          >
+            <h2>
+              <a href="about.html" role="menuitem">About Me</a>
+            </h2>
+          </li>
+          <li
+            role="presentation"
+            class="navigation-list__item navigation-list__item--active"
+          >
+            <h2>
+              <a href="contact.html" role="menuitem">Contact</a>
+            </h2>
+          </li>
+        </ul>
+      </div>
+    </header>
 
+    <main>
+      <div class="profile">
+        <img
+          src="img/alex-sweeney-headshot.jpg"
+          class="profile_portrait"
+          alt="Alex Sweeney Portrait"
+        />
+        <div>
+          <p>
+            I am currently a Trader Solutions Specialist at TD
+            Ameritrade/Schwab. Clients who have an account of $3,000 or more
+            with us get free 45 minute 1-on-1 walkthroughs of Thinkorswim, our
+            advanced trading software.
+          </p>
+          <p>
+            My role consists of me performing between 5-7 of these meetings per
+            day, where I spend the first 5 or so minutes getting to know them as
+            a trader or investor, so that I can tailor their demo to fit their
+            needs. We spend the rest of the time going through various
+            features/tools on the platform, and how they can use them best.
+          </p>
+          <p>
+            We have a screen sharing function within the platform that makes
+            these meetings much easier, as I can point on the screen to guide
+            them.
+          </p>
+          <p></p>
+        </div>
 
-<header>
-   <!-- Add logo here -->
-   <img src="http://via.placeholder.com/100x100" alt="logo">
-   <h1>Alex Sweeney</h1>
-   <nav>
-    <nav>
-      <ul role="menubar">
-         <li role="presentation">
-            <h2><a href="index.html" role="menuitem">Home</a></h2>
-         </li>
-         <li role="presentation">
-            <h2><a href="about.html" role="menuitem">About Me</a></h2>
-         </li>
-        <li role="presentation">
-            <h2><a href="contact.html" role="menuitem">Contact</a></h2>
-         </li>
-      </ul>
-   </nav>
-   </nav> 
-</header>
-  
+        <table class="coding-skills__table">
+          <thead>
+            <tr>
+              <td>Coding Skills</td>
+              <td>Years of Experience</td>
+              <td>Level of Expertise</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>< 1</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>< 1</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>ThinkScript</td>
+              <td>5</td>
+              <td>Expert</td>
+            </tr>
+            <tr>
+              <td>PineScript</td>
+              <td>2</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
 
-<main>
-  <div> 
-  <img src="img/alex-sweeney-headshot.jpg" alt="Headshot, a photo of me" height="300" width="300">
-    <div>
-          <p>I am currently a Trader Solutions Specialist at TD Ameritrade/Schwab.  Clients who have an account of $3,000 or more with us get free 45 minute 1-on-1 walkthroughs of Thinkorswim, our advanced trading software.</p>
-          <p>My role consists of me performing between 6-8 of these meetings per day, where I spend the first 5 or so minutes getting to know them as a trader or investor, so that I can tailor their demo to fit their needs.  We spend the rest of the time going through various features/tools on the platform, and how they can use them best.</p> 
-          <p>We have a screen sharing function within the platform that makes these meetings much easier, as I can point on the screen to guide them.<p>
-      
-    </div>       
-  </div> 
+        <div class="resume-area">
+          <h4>
+            <p>
+              Here is a copy of my resume, with more info on my work and
+              education history:
+            </p>
+          </h4>
+          <a href="files/AlexSweeneyResume.pdf" class="button" target="blank"
+            >View my Resume</a
+          >
 
-  <table>
-    <thead>
-     <tr>
-      <td>Coding Skills</td>
-      <td>Years of Experience</td>
-      <td>Level of Expertise</td>
-     </tr>
-    </thead>
-   <tbody>
-     <tr>
-      <td>HTML</td>
-      <td>< 1</td>
-      <td>Beginner </td>
-     </tr>
-     <tr>
-      <td>CSS</td>
-      <td>< 1</td>
-      <td>Beginner</td>
-     </tr>
-     <tr>
-      <td>ThinkScript</td>
-      <td>5</td>
-      <td>Expert</td>
-     </tr>
-     <tr>
-      <td>PineScript</td>
-      <td>2</td>
-      <td>Intermediate</td>
-     </tr>
-   </tbody> 
-  </table>
+          <a href="files/AlexSweeneyResume.pdf" class="button" download
+            >Download my Resume</a
+          >
+        </div>
+      </div>
+    </main>
 
-       
-  <div>
-    <h2><p>Here is a copy of my resume, with more info on my work and education history:</p></h2>
-    <a href="https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A5ad673ac-f2f1-4efa-82d0-6f27101b8e09&viewer%21megaVerb=group-discover" target="_blank"><img src="img/adobe_acrobat_logo.svg" alt="Adobe Logo to view Resume"></a>
-  </div>     
-</main>
+    <footer class="page-footer">
+      <h3><p>Find me on</p></h3>
+      <div class="social-media">
+        <a href="https://github.com/asweeney0101" target="_blank"
+          ><img src="img/github_icon.svg" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/alex-sweeney-7b030b142"
+          target="_blank"
+          ><img src="img/linkedin_icon.svg" alt="Linkedin"
+        /></a>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+      </div>
+    </footer>
 
-
-<footer>
-  <h3><p>Find me on:</p></h3>
-  <a href="https://github.com/asweeney0101" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
-  <a href="https://www.linkedin.com/in/alex-sweeney-7b030b142" target="_blank"><img src="img/linkedin_icon.svg" alt="Linkedin"></a>
-</footer>
-
-
-<script src="js/tota11y.min.js"></script>
-</body>
-
+    <!--  <script src="js/tota11y.min.js"></script> -->
+  </body>
 </html>
-
-
-

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alex Sweeney - Portfolio</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./Img/favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="page-header__left">
+        <img src="img/logo_v1.png" alt="logo" class="page-header__logo" />
+        <h1>Alex Sweeney</h1>
+      </div>
+      <div class="page-header__right">
+        <ul role="menubar" class="navigation-list">
+          <li
+            role="presentation"
+            class="navigation-list__item navigation-list__item--active"
+          >
+            <h2>
+              <a href="index.html" role="menuitem">Home</a>
+            </h2>
+          </li>
+          <li
+            role="presentation"
+            class="navigation-list__item navigation-list__item--active"
+          >
+            <h2>
+              <a href="about.html" role="menuitem">About Me</a>
+            </h2>
+          </li>
+          <li
+            role="presentation"
+            class="navigation-list__item navigation-list__item--active"
+          >
+            <h2>
+              <a href="contact.html" role="menuitem">Contact</a>
+            </h2>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <h3>Thinkorswim: Thinkscript</h3>
+        <p>
+          Thinkorswim is TDA/Schwab's trading software. There are plenty of
+          things that the vanilla settings don't let you do, so the platform has
+          many places where you can view the code behind how something works,
+          and rewrite parts of it to better suit your needs. It's done in a
+          proprietary language called "Thinkscript", similar to Java (what
+          thinkorswim itself is written in).
+        </p>
+        <p>
+          Below are examples of scripts I have written either for clients or for
+          my own personal trading use. Click on any of them to view the syntax
+          used and screenshots of how it works!
+        </p>
+        <p>
+          *Note: All custom scripts shown here are to demonstrate my experience
+          with Thinkscript, and are intended for educational/informational
+          purposes only. Not investment advice, or a recommendation of any
+          security, strategy, or account type. It is recommended that you study
+          the Thinkscript Manual and Thinkscript Tutorials prior to utilizing
+          any custom scripts in your own trading.
+        </p>
+      </div>
+
+      <section>
+        <h3>Custom Thinkorswim Tools:</h3>
+        <div class="grid">
+          <div class="grid-item">
+            <h4>Auto-Fibonacci</h4>
+            <p>
+              A chart study that displays vertical lines between the highest and
+              lowest points of a chart according to the fibonacci rules
+            </p>
+            <a href="xyz">See Project</a>
+          </div>
+
+          <div class="grid-item">
+            <h4>Account Performance Comparison</h4>
+            <p>
+              Some labels you can add to your AccountNetLiq study to view your
+              portfolio's performance vs another security.
+            </p>
+            <a href="xyz">See Project</a>
+          </div>
+
+          <div class="grid-item">
+            <h4>Volume Height Adjuster</h4>
+            <p>
+              A chart study that can adjust the height of the volume bars as to
+              not interfere with the price bars.
+            </p>
+            <a href="xyz">See Project</a>
+          </div>
+
+          <div class="grid-item">
+            <h4>TTM Squeeze Backtest</h4>
+            <p>
+              A tool that backtests the efficacy of a study who's initial source
+              code was hidden.
+            </p>
+            <a href="xyz">See Project</a>
+          </div>
+
+          <div class="grid-item">
+            <h4>Ultimate Volume Study</h4>
+            <p>A tool to help guage overall buying or selling volume.</p>
+            <a href="xyz">See Project</a>
+          </div>
+
+          <div class="grid-item">
+            <h4>Portfolio Allocation Calculator</h4>
+            <p>
+              Plug in your desired allocation percentage, and it outputs how
+              many shares needed to buy or sell to get there.
+            </p>
+            <a href="xyz">See Project</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h3><p>Find me on</p></h3>
+      <div class="social-media">
+        <a href="https://github.com/asweeney0101" target="_blank"
+          ><img src="img/github_icon.svg" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/alex-sweeney-7b030b142"
+          target="_blank"
+          ><img src="img/linkedin_icon.svg" alt="Linkedin"
+        /></a>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+      </div>
+    </footer>
+
+    <!--  <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>
