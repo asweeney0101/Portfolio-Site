@@ -121,6 +121,7 @@ a:active {
 .page-footer {
   clear: both;
   display: flex;
+  padding-bottom: 3rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -150,11 +151,12 @@ a:active {
 }
 
 .profile_portrait {
-  min-width: 300px;
-  max-width: 500px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 50%;
   align-self: center;
+  object-fit: cover;
 }
 
 .coding-skills__table {
@@ -191,6 +193,7 @@ button {
 }
 
 .flex-item {
+  flex-grow: 1;
   background-color: var(--header-color);
   margin: 10px;
   padding: 5px 10px 10px 10px;
@@ -247,6 +250,10 @@ button {
 /* Media Quereys */
 /* Media Quereys */
 
+/*
+margin: top right bottom left;
+*/
+
 @media (min-width: 760px) {
   :root {
     --screen-size-scale: 1.05;
@@ -255,7 +262,7 @@ button {
     line-height: 1.6;
   }
   main {
-    margin: 40px 100px 80px;
+    margin: 40px 15% 80px;
   }
 
   .page-header {
@@ -280,7 +287,7 @@ button {
     line-height: 1.6;
   }
   main {
-    margin: 60px 150px 80px;
+    margin: 60px 20% 80px;
   }
 
   .page-header {
