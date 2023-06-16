@@ -1,7 +1,15 @@
 :root {
-  --font-weight__h: 700;
-  --text-color: #201b41;
-  --header-color: #00ffff;
+  --font-weight__h: 500;
+  --text-color: #d2dcee;
+  /* --header-color: #0aafaf; */
+
+  --header-color: #0f4173;
+  --header-color: #0f4173;
+  --header-color: #0f4173;
+
+  --header-color: #31697c;
+  --header-color: #3b465e;
+  --header-color: #054257;
   --screen-size-scale: 1;
 }
 
@@ -11,11 +19,11 @@
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-size: calc(16px * var(--screen-size-scale));
   color: var(--text-color);
   line-height: 1.5;
-  background-color: rgb(214, 208, 251, 0.2);
+  background-color: #111b31;
 }
 .bold {
   font-weight: var(--font-weight__h);
