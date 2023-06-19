@@ -5,11 +5,12 @@
 
   --header-color: #0f4173;
   --header-color: #0f4173;
-  --header-color: #0f4173;
 
   --header-color: #31697c;
   --header-color: #3b465e;
   --header-color: #054257;
+  --header-color: #0b4356;
+  --header-color: #005270;
   --screen-size-scale: 1;
 }
 
@@ -176,15 +177,10 @@ a:active {
 }
 
 .main-flex-item:hover .thumbnail {
-  filter: brightness(85%);
-  transition: filter 0.3s ease;
+  filter: brightness(50%);
+  /* transition: filter 0.3s ease; */
 }
 
-.main-flex-item:hover a {
-  color: #007bff;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
 /* Home  */ /* Home  */
 
 /* About Me */
@@ -217,7 +213,7 @@ button {
 .button:hover,
 .button:focus {
   cursor: pointer;
-  background-color: rgb(0, 255, 255, 0.2);
+  filter: brightness(65%);
 }
 
 /*  Thinkorswim  */
