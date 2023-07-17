@@ -144,10 +144,6 @@ a:active {
   font-size: calc(25px * var(--screen-size-scale));
 }
 
-.thumbnail {
-  max-width: 250px;
-}
-
 /* end of universal CSS */
 
 /* Home  */ /* Home  */
@@ -177,6 +173,7 @@ a:active {
   width: 250px;
   height: 150px;
   object-fit: cover;
+  max-width: 250px;
 }
 
 .main-flex-item:hover .thumbnail {
