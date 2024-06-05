@@ -225,6 +225,24 @@ button {
   filter: brightness(65%);
 }
 
+/*  Career Foundry  */
+
+.cf-flex {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+-flex-item {
+  flex-grow: 1;
+  background-color: var(--header-color);
+  margin: 10px;
+  padding: 5px 10px 10px 10px;
+  max-width: 350px;
+  justify-items: center;
+  text-align: center;
+}
+
 /*  Thinkorswim  */
 /*  Thinkorswim  */
 
