@@ -1,16 +1,16 @@
 :root {
   --font-weight__h: 500;
-  --text-color: #d2dcee;
+  /* --text-color: #d2dcee; */
   --text-color: #e1faff;
-  /* --header-color: #0aafaf; */
 
+  /* --header-color: #0aafaf; 
   --header-color: #0f4173;
   --header-color: #0f4173;
-
   --header-color: #31697c;
   --header-color: #3b465e;
   --header-color: #054257;
-  --header-color: #0b4356;
+  --header-color: #0b4356; */
+
   --header-color: #005270;
 
   --screen-size-scale: 1;
@@ -89,6 +89,9 @@ a:active {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+.page-header__left:hover {
+  filter: brightness(80%);
 }
 
 .page-header__logo {
