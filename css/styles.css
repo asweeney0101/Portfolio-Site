@@ -41,7 +41,7 @@ main {
 }
 
 body h1 {
-  font-size: calc(25px * var(--screen-size-scale));
+  font-size: calc(22px * var(--screen-size-scale));
   font-weight: var(--font-weight__h);
   color: var(--text-color);
 }
@@ -62,6 +62,10 @@ h4 {
   color: var(--text-color);
 }
 
+p {
+  line-height: calc(30px * var(--screen-size-scale));
+}
+
 a {
   color: var(--text-color);
 }
@@ -78,6 +82,8 @@ a:active {
 .page-header {
   display: flex;
   width: 100%;
+  max-height: 200px;
+  padding-top: 10px;
   background-color: var(--header-color);
   flex-direction: column;
   align-items: center;
@@ -95,8 +101,8 @@ a:active {
 }
 
 .page-header__logo {
-  width: calc(65px * var(--screen-size-scale));
-  margin: 15px 10px 0 10px;
+  width: calc(56px * var(--screen-size-scale));
+  margin: auto 10px 0 10px;
   border-radius: 35%;
 }
 
@@ -163,6 +169,10 @@ a:active {
 .main-title {
   text-align: center;
   padding: 0px 20px;
+}
+
+.main-description {
+  margin-bottom: 30px;
 }
 
 .main-flex {
@@ -239,11 +249,18 @@ button {
 .cf-flex-item {
   flex-grow: 1;
   background-color: var(--header-color);
-  margin: 10px 10px;
+  margin: calc(20px * var(--screen-size-scale));
   padding: 10px;
   max-width: 275px;
   justify-items: center;
   text-align: center;
+}
+
+.thumbnail-pogo {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  max-width: 250px;
 }
 
 /* Media Quereys */
@@ -262,6 +279,10 @@ margin: top right bottom left;
   }
   main {
     margin: 40px 12.5% 80px;
+  }
+  .page-header {
+    padding-top: 0;
+    max-height: 90px;
   }
 
   .page-header {
