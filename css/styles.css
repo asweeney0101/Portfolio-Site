@@ -254,6 +254,7 @@ button {
   max-width: 275px;
   justify-items: center;
   text-align: center;
+  align-content: center;
 }
 
 .thumbnail-pogo {
@@ -261,6 +262,14 @@ button {
   height: auto;
   object-fit: cover;
   max-width: 250px;
+}
+
+.pogo-gh {
+  width: 150px;
+}
+
+.pogo-gh-brightness:hover {
+  opacity: 75%;
 }
 
 /* Media Quereys */
